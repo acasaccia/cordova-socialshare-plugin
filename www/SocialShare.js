@@ -13,9 +13,9 @@ SocialShare.prototype.share = function(successCallback, errorCallback, options) 
 				action: 'android.intent.action.SEND',
 				type: 'text/plain',
 				extras: { 
-					'android.intent.extra.TEXT' : options.text,
+					'android.intent.extra.TEXT' : options.text.replace("{{url}}", options.url),
 					'dialogTitle' : options.dialogTitle,
-					'fbShareUrl' : options.fbShareUrl,
+					'fbShareUrl' : options.url,
 					'mailSubject' : options.mailSubject
 				}
 			}
