@@ -16,17 +16,18 @@
 
 	<keywords>social, share, facebook, twitter, whatsapp, sms, mail</keywords>
 
-	<license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+	<license>GNU LESSER GENERAL PUBLIC LICENSE</license>
 
-	<!-- a single file, to be copied in the root directory -->
-	<asset src="www/SocialShare.js" target="SocialShare.js" />
+	<js-module src="www/SocialShare.js" name="SocialShare">
+   		<clobbers target="SocialShare" />
+	</js-module>
 
 	<!-- android -->
-	<source-file src="src/android/SocialShare.java" target-dir="src/com/gestionaleauto" />
+	<source-file src="src/android/SocialShare.java" target-dir="src/com/gestionaleauto/" />
 				
 	<config-file target="res/xml/config.xml" parent="/*">
 		<feature name="SocialShare" >
-			<param name="android-package" value="com.plugin.gcm.SocialShare"/>
+			<param name="android-package" value="com.gestionaleauto.SocialShare"/>
 		</feature>
 	</config-file>
 	
