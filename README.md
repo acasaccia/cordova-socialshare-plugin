@@ -3,6 +3,17 @@ cordova-socialshare-plugin
 
 Cordova Social Share Plugin for Android
 
+Sends a snippet of text (or just an url for Facebook) to be shared via an android intent to a bunch of whitelisted applications:
+
+* Facebook
+* System mail
+* Gmail
+* Twitter official
+* Twidroid
+* Tweecaster
+* TweetDeck
+* WhatsApp
+
 Usage example:
 
 ```js
