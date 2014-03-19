@@ -25,11 +25,11 @@ SocialShare.prototype.share = function(successCallback, errorCallback, options) 
 
 //-------------------------------------------------------------------
 
-if(!window.plugins) {
-    window.plugins = {};
+if(!cordova.plugins) {
+    cordova.plugins = {};
 }
-if (!window.plugins.SocialShare) {
-    window.plugins.SocialShare = new SocialShare();
+if (!cordova.plugins.SocialShare) {
+    cordova.plugins.SocialShare = new SocialShare();
 }
 
 if (module.exports) {
