@@ -111,7 +111,7 @@ public class SocialShare extends CordovaPlugin {
         
         Intent[] extraIntents = intentList.toArray( new Intent[ intentList.size() ]);
                         
-        ((DroidGap)this.cordova.getActivity()).startActivity(Intent.createChooser(mainIntent, extras.get("dialogTitle")).putExtra(Intent.EXTRA_INITIAL_INTENTS, extraIntents));
+        this.cordova.getActivity().startActivity(Intent.createChooser(mainIntent, extras.get("dialogTitle")).putExtra(Intent.EXTRA_INITIAL_INTENTS, extraIntents));
         
     }
 }
