@@ -17,7 +17,7 @@ Sends a snippet of text (or just an url for Facebook) to be shared via an androi
 Usage example:
 
 ```js
-cordova.plugins.SocialShare.share(
+window.plugins.SocialShare.share(
     successCallback,
     failureCallback,
     {
