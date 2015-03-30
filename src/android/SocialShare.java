@@ -1,4 +1,4 @@
-package com.gestionaleauto;
+package com.gestionaleautonoconflict;
 
 import java.util.ArrayList;
 import java.util.HashMap;
