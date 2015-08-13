@@ -14,6 +14,12 @@ Sends a snippet of text (or just an url for Facebook) to be shared via an androi
 * TweetDeck
 * WhatsApp
 
+Installation:
+
+```
+$ cordova plugin add https://github.com/acasaccia/cordova-socialshare-plugin.git
+```
+
 Usage example:
 
 ```js
